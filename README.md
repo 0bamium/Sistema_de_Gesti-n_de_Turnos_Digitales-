@@ -1,1 +1,1 @@
-# Sistema_de_Gesti-n_de_Turnos_Digitales-
+# Sistema_de_Gestion_de_Turnos_Digitales
