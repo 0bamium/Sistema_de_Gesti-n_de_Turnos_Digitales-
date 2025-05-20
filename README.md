@@ -10,6 +10,8 @@ comprender de manera clara las funcionalidades y la arquitectura del sistema uti
 
 ### 1. Diagrama de Casos de Uso UML
 
+![](https://github.com/0bamium/Sistema_de_Gestion_de_Turnos_Digitales/blob/main/imagenes/GestionTurnoDigital.drawio.png)
+
 #### Descripción general
 
 El análisis permitió identificar de manera clara los actores involucrados y las funcionalidades del sistema. Además, se aplicaron correctamente relaciones de `<<include>>` y `<<extend>>` para describir el flujo del proceso.
