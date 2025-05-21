@@ -37,6 +37,7 @@ El análisis permitió identificar de manera clara los actores involucrados y la
 - Se utilizaron `<<extend>>` en procesos donde es opcional el proceso del caso de uso, como en el caso de enviar una notificacion SMS, ya que el cliente tiene la opcion de querer recibirla o no.
 
 ### 2. Diagrama de Clases UML con Patrones Aplicados
+![](https://github.com/0bamium/Sistema_de_Gestion_de_Turnos_Digitales/blob/509f8e62dfd4a2eb9fcc419824c924742f596422/imagenes/DigramaDeClases_SistemaDeGestionDeTurnosDigitales.png)
 
 ### Justificación Arquitectónica y Patrones Aplicados
 
