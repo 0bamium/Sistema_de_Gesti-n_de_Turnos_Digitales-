@@ -10,7 +10,7 @@ comprender de manera clara las funcionalidades y la arquitectura del sistema uti
 
 ### 1. Diagrama de Casos de Uso UML
 
-![]()
+![](https://github.com/0bamium/Sistema_de_Gestion_de_Turnos_Digitales/blob/4a6ca63c7dfadd637280f9bc97fd53bbe0ae527a/imagenes/GestionDeTurnosDigitales.drawio.png)
 
 #### Descripción general
 
