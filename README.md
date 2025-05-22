@@ -42,24 +42,50 @@ El análisis permitió identificar de manera clara los actores involucrados y la
 ### Justificación Arquitectónica y Patrones Aplicados
 
 #### Selección de patrones
+Para la creación del diagrama, se utilizaron los siguientes patrones para una correcta implementación
+- Prototype
+- Singleton
+- Bridge
+- Adapter
 
-#### 1. Singleton (ConfiguracionSistema)
-
-##### Justificación:
-
-##### Intención arquitectónica:
-
-#### 2. Prototype (PlantillaMovimiento)
-
-##### Justificación:
-
-##### Intención arquitectónica:
-
-#### 3. Adapter (Adaptador)
+#### 1. Singleton (`SistemaDeTurnos`)
 
 ##### Justificación:
+Esta decisión de diseño se fundamenta en el hecho de que el sistema debe centralizar la generación, asignación y gestión de turnos para todos los clientes y recepcionistas, por ello la mejor opcion es optar por una única instancia. Permitir múltiples instancias de SistemaDeTurnos podría provocar inconsistencias en la numeración de los turnos.
 
 ##### Intención arquitectónica:
+- mantener la coherencia del flujo de turnos
+- evitar la duplicación de datos
+- Encapsula la lógica compartida y mejora la mantenibilidad al evitar múltiples puntos de decisión y almacenamiento de estado
+
+#### 2. Prototype (`Turno`)
+
+##### Justificación:
+La implementacion de este patrón de diseño permite la clonación rápida y eficiente de objetos turno a partir de una instancia base o plantilla. Es útil cuando se desea crear múltiples turnos similares sin repetir la inicialización completa.
+
+##### Intención arquitectónica:
+- Promueve la reutilización de estructuras base de turnos, como plantillas o configuraciones preestablecidas
+- Provee una forma flexible y eficiente de crear nuevos objetos a partir de prototipos existentes
+- Nuevos tipos de turno pueden clonarse fácilmente a partir de prototipos sin modificar la lógica interna de SistemaDeTurnos.
+
+#### 3. Adapter (`AdaptadorSMS` y `AdaptadorEmail`)
+
+##### Justificación:
+Se utiliza para integrar diferentes canales de notificación (como SMS o Email) que poseen interfaces distintas e incompatibles con la estructura esperada por el sistema.
+
+##### Intención arquitectónica:
+- Promueve la escalabilidad, ya que se pueden incorporar nuevos tipos de notificaciones sin alterar el sistema base
+- Separa la lógica del negocio del sistema de las dependencias externas (como APIs de SMS o Email)
+
+#### 3. Bridge (`NotificacionConcreta`)
+
+##### Justificación:
+Se aplica el patrón Bridge para separar la abstracción del sistema de notificaciones `Notificacion` de su implementación específica `CanalNotificacion`.
+
+##### Intención arquitectónica:
+- Mejora la mantenibilidad al permitir modificar o extender los canales de envío sin tocar la lógica principal del sistema
+- Evita la explosión de subclases (como NotificacionPorSMS, NotificacionPorEmail, etc)
+- Desacopla una abstracción de su implementación, permitiendo que ambas evolucionen de forma independiente.
 
 ### 3. Diagrama de Implementación UML
 
