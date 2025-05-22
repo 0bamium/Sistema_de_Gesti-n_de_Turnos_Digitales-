@@ -91,5 +91,21 @@ Se aplica el patrón Bridge para separar la abstracción del sistema de notifica
 ![](https://github.com/0bamium/Sistema_de_Gestion_de_Turnos_Digitales/blob/fa84a1a7fd1bb9645e56f0e2de51df7cbf50b93b/imagenes/DiagramaDeImplementacionSistemaDeGestionDeTurnosDigitales.png)
 
 #### Despliegue Físico y decisiones técnicas:
+- Nodos físicos diferenciados para reforzar la seguridad, escalabilidad y disponibilidad del sistema, incluyendo cliente, servidor de aplicación y base de datos.
+
+- Separación clara de responsabilidades entre la interfaz de usuario, la lógica del sistema (SistemaDeTurnos.jar) y el almacenamiento de datos (BDTurnos).
+
+- Uso de protocolos estándar (REST) para la comunicación entre el cliente y el servidor, y para la integración con servicios externos (SMS y Email).
+
+- Implementación de patrones de diseño (como Singleton, Prototype, Bridge, y Adapter) para reforzar el control de instancias, la reutilización de objetos, la abstracción de canales de notificación y la integración con APIs externas.
 
 ### Reflexiones Finales del Modelado
+Este ejercicio refleja una aproximación arquitectónica profesional donde:
+
+- Cada patrón fue aplicado dentro del proyecto y de manera funcional para mejorar su estructura (Singleton, Prototype, Bridge, Adapter).
+
+- La transición entre caso de uso --> diagrama de clases --> diagrama de implementación permitió mantener coherencia y claridad desde los requerimientos hasta la infraestructura física del sistema.
+
+- La utilización de componentes desacoplados y patrones estructurales permitió construir un sistema escalable, mantenible y alineado a principios SOLID, aplicando buenas prácticas de ingeniería de software.
+
+Este trabajo busca servir como referencia formal para futuros desarrollos de sistemas con arquitectura orientada a patrones, sirviendo de base y mostrando un enfoque práctico, ordenado y profesional en el modelado de soluciones tecnológicas.
