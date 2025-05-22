@@ -25,8 +25,8 @@ El análisis permitió identificar de manera clara los actores involucrados y la
 
 ##### Generar un número al turno que reservó
 - `<<include>>` Generar Numero: La generación de un número para el cliente es obligatorio al momento de reservar un turno.
-##### Consulta del estado del turno por SMS
-- `<<extend>>` Enviar notificacion SMS o Email:  De manera opcional, al momento de reservar un turno o cancelarlo, puede recibir una notificación por SMS o Email.
+##### Consulta del estado del turno por Notificación
+- `<<extend>>` Enviar notificacion SMS o Email:  De manera opcional, al momento de reservar un turno o ver su estado, puede recibir una notificación por SMS o Email.
 ##### Proceso de atención al cliente
 - `<<include>>` Atender Cliente: El recepcionista siempre atenderá al nuevo cliente luego de llamarlo por su número.
 - `<<include>>` Marcar turno atendido: Luego de atender al cliente, el recepcionista va a marcar el turno actual como "atendido" avanzando al siguiente turno y repitiendo el proceso de atención al cliente.
@@ -34,7 +34,7 @@ El análisis permitió identificar de manera clara los actores involucrados y la
 #### Justificación de las relaciones aplicadas:
 
 - Se utilizaron `<<include>>` en procesos donde el caso de uso depende de otro obligatorio, como en el caso de reservar un turno, es necesario generar un número para ser atendido.
-- Se utilizaron `<<extend>>` en procesos donde es opcional el proceso del caso de uso, como en el caso de enviar una notificacion SMS, ya que el cliente tiene la opcion de querer recibirla o no.
+- Se utilizaron `<<extend>>` en procesos donde es opcional el proceso del caso de uso, como en el caso de enviar una notificacion, ya que el cliente tiene la opcion de querer recibirla o no.
 
 ### 2. Diagrama de Clases UML con Patrones Aplicados
 ![](https://github.com/0bamium/Sistema_de_Gestion_de_Turnos_Digitales/blob/509f8e62dfd4a2eb9fcc419824c924742f596422/imagenes/DigramaDeClases_SistemaDeGestionDeTurnosDigitales.png)
