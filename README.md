@@ -88,6 +88,7 @@ Se aplica el patrón Bridge para separar la abstracción del sistema de notifica
 - Desacopla una abstracción de su implementación, permitiendo que ambas evolucionen de forma independiente.
 
 ### 3. Diagrama de Implementación UML
+![](https://github.com/0bamium/Sistema_de_Gestion_de_Turnos_Digitales/blob/fa84a1a7fd1bb9645e56f0e2de51df7cbf50b93b/imagenes/DiagramaDeImplementacionSistemaDeGestionDeTurnosDigitales.png)
 
 #### Despliegue Físico y decisiones técnicas:
 
