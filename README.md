@@ -26,7 +26,7 @@ El análisis permitió identificar de manera clara los actores involucrados y la
 ##### Generar un número al turno que reservó
 - `<<include>>` Generar Numero: La generación de un número para el cliente es obligatorio al momento de reservar un turno.
 ##### Consulta del estado del turno por SMS
-- `<<extend>>` Enviar notificacion SMS:  De manera opcional, al momento de reservar un turno o cancelarlo, puede recibir una notificación por SMS.
+- `<<extend>>` Enviar notificacion SMS o Email:  De manera opcional, al momento de reservar un turno o cancelarlo, puede recibir una notificación por SMS o Email.
 ##### Proceso de atención al cliente
 - `<<include>>` Atender Cliente: El recepcionista siempre atenderá al nuevo cliente luego de llamarlo por su número.
 - `<<include>>` Marcar turno atendido: Luego de atender al cliente, el recepcionista va a marcar el turno actual como "atendido" avanzando al siguiente turno y repitiendo el proceso de atención al cliente.
